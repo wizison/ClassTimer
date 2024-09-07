@@ -1,3 +1,5 @@
-# ClassTimer fork
+# ClassTimer (fork)
 
-This is a fork of ClassTimer WoW addon. All credits to the original author: https://github.com/Stanzilla/ClassTimer
+This is a fork of ClassTimer WoW addon. 
+
+original project: https://github.com/Stanzilla/ClassTimer
