@@ -37,7 +37,7 @@ function ClassTimer:CreateTimers()
 			ClassTimer:proxyGetSpellInfo(73684), -- Unleash Earth
 			ClassTimer:proxyGetSpellInfo(73682), -- Unleash Frost
 			ClassTimer:proxyGetSpellInfo(8042), -- Earth Shock
-			ClassTimer:proxyGetSpellInfo(8050), -- Flame Shock
+			ClassTimer:proxyGetSpellInfo(188389), -- Flame Shock
 			(ClassTimer:proxyGetSpellInfo(8056)), -- Frost Shock
 		},
 	}

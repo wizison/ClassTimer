@@ -54,6 +54,7 @@ function ClassTimer:CreateTimers()
 			ClassTimer:proxyGetSpellInfo(102543), -- Incarnation: King of the Jungle
 			ClassTimer:proxyGetSpellInfo(102560), -- Incarnation: Chosen of Elune
 			ClassTimer:proxyGetSpellInfo(117679), -- Incarnation   (this is the one used for Tree of Life)
+			ClassTimer:proxyGetSpellInfo(192081), -- Ironfur
 			(ClassTimer:proxyGetSpellInfo(16689)), -- Nature's Grasp
 		},
 		Misc = {
