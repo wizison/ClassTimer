@@ -1,12 +1,9 @@
-## Interface: 100002
-## Title: ClassTimer
+## Interface: 30403
+## Title: ClassTimer by uR Wizi
 ## Notes: Timers for Buffs, DOTs, CC effects, etc..
-## Notes-zhCN: 职业技能计时计
-## Notes-zhTW: 職業技能計時器
-## Notes-ruRU: Таймеры для  баффов, DOTs, CC эффектов, и т.д.
-## Author: Ominous
+## Author: Wizi
 ## SavedVariables: ClassTimerDB
-## Version: @project-version@
+## Version: 1.0.0
 ## OptionalDeps: Ace3, LibSharedMedia-3.0
 
 ## X-Credits: Nymbia
@@ -30,10 +27,6 @@ Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
 #@end-no-lib-strip@
 
 Locales\enUS.lua
-Locales\koKR.lua
-Locales\zhCN.lua
-Locales\zhTW.lua
-Locales\ruRU.lua
 
 ClassTimer.lua
 options.lua

@@ -399,6 +399,22 @@ function ClassTimer:UNIT_AURA(units)
 	end
 end
 
+function ClassTimer:proxyGetSpellInfo(spellId)
+	if spellId == nil or not spellId then
+		return nil,nil,nil,nil,nil,nil,nil,nil
+	end
+	if GetSpellInfo then
+		return GetSpellInfo(spellId)
+	else
+		local spellInfo = C_Spell.GetSpellInfo(spellId)
+		if spellInfo == nil then
+			return nil,nil,nil,nil,nil,nil,nil,nil
+		else
+			return spellInfo.name,nil,spellInfo.iconID,spellInfo.castTime,spellInfo.minRange,spellInfo.maxRange,spellInfo.spellID,spellInfo.originalIconID
+		end
+	end
+end
+
 function ClassTimer:List(table)
 	if not table then
 		return
@@ -445,10 +461,23 @@ do
 		if db.buffs then
 			local i = 1
 			while true do
-				local name, texture, count, _, duration, endTime, caster = UnitBuff(unit, i)
+				local auraData = C_UnitAuras.GetBuffDataByIndex(unit, i, "HELPFUL")
+				if auraData == nil then
+					break
+				end
+
+				local name = auraData.name
+				local texture = auraData.icon
+				local count = auraData.charges
+				--local debuffType = auraData.dispelName
+				local duration = auraData.duration
+				local endTime = auraData.expirationTime
+				local caster = auraData.sourceUnit
+
 				if not name then
 					break
 				end
+
 				if caster == nil then
 					caster = "player"
 				end
@@ -488,10 +517,23 @@ do
 		if db.debuffs then
 			local i = 1
 			while true do
-				local name, texture, count, debuffType, duration, endTime, caster = UnitDebuff(unit, i)
+				local auraData = C_UnitAuras.GetDebuffDataByIndex(unit, i, "HARMFUL")
+				if auraData == nil then
+					break
+				end
+
+				local name = auraData.name
+				local texture = auraData.icon
+				local count = auraData.charges
+				local debuffType = auraData.dispelName
+				local duration = auraData.duration
+				local endTime = auraData.expirationTime
+				local caster = auraData.sourceUnit
+
 				if not name then
 					break
 				end
+
 				local isMine = whatsMine[caster]
 				if
 					duration

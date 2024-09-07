@@ -5,36 +5,36 @@ end
 function ClassTimer:CreateTimers()
 	return {
 		Buffs = {
-			GetSpellInfo(47585), -- Dispersion
-			GetSpellInfo(81662), -- Evangelism
-			GetSpellInfo(15286), -- Vampiric Embrace
-			GetSpellInfo(33206), -- Pain Suppression
-			GetSpellInfo(10060), -- Power Infusion
-			GetSpellInfo(59887), -- Borrowed Time
-			GetSpellInfo(47753), --Divine Aegis
-			GetSpellInfo(47930), -- Grace
-			GetSpellInfo(139), -- Renew
-			GetSpellInfo(63735), -- Serendipity
-			GetSpellInfo(47788), -- Guardian Spirit
-			(GetSpellInfo(33150)), -- Surge of Light
+			ClassTimer:proxyGetSpellInfo(47585), -- Dispersion
+			ClassTimer:proxyGetSpellInfo(81662), -- Evangelism
+			ClassTimer:proxyGetSpellInfo(15286), -- Vampiric Embrace
+			ClassTimer:proxyGetSpellInfo(33206), -- Pain Suppression
+			ClassTimer:proxyGetSpellInfo(10060), -- Power Infusion
+			ClassTimer:proxyGetSpellInfo(59887), -- Borrowed Time
+			ClassTimer:proxyGetSpellInfo(47753), --Divine Aegis
+			ClassTimer:proxyGetSpellInfo(47930), -- Grace
+			ClassTimer:proxyGetSpellInfo(139), -- Renew
+			ClassTimer:proxyGetSpellInfo(63735), -- Serendipity
+			ClassTimer:proxyGetSpellInfo(47788), -- Guardian Spirit
+			(ClassTimer:proxyGetSpellInfo(33150)), -- Surge of Light
 		},
 		DOTs = {
-			GetSpellInfo(33076), -- Prayer of Mending
-			GetSpellInfo(589), -- Shadow Word: Pain
-			GetSpellInfo(15487), -- Silence
-			GetSpellInfo(14914), -- Holy Fire
-			GetSpellInfo(64044), -- Psychic Horror
-			GetSpellInfo(204197), -- Purge the Wicked
-			(GetSpellInfo(34914)), -- Vampiric Touch
+			ClassTimer:proxyGetSpellInfo(33076), -- Prayer of Mending
+			ClassTimer:proxyGetSpellInfo(589), -- Shadow Word: Pain
+			ClassTimer:proxyGetSpellInfo(15487), -- Silence
+			ClassTimer:proxyGetSpellInfo(14914), -- Holy Fire
+			ClassTimer:proxyGetSpellInfo(64044), -- Psychic Horror
+			ClassTimer:proxyGetSpellInfo(204197), -- Purge the Wicked
+			(ClassTimer:proxyGetSpellInfo(34914)), -- Vampiric Touch
 		},
 		Misc = {
-			GetSpellInfo(586), -- Fade
-			GetSpellInfo(1706), -- Levitate
-			GetSpellInfo(17), -- Power Word: Shield
-			GetSpellInfo(8122), -- Psychic Scream
-			GetSpellInfo(9484), -- Shackle Undead
-			GetSpellInfo(20711), -- Spirit of Redemption
-			(GetSpellInfo(6788)), -- Weakened Soul
+			ClassTimer:proxyGetSpellInfo(586), -- Fade
+			ClassTimer:proxyGetSpellInfo(1706), -- Levitate
+			ClassTimer:proxyGetSpellInfo(17), -- Power Word: Shield
+			ClassTimer:proxyGetSpellInfo(8122), -- Psychic Scream
+			ClassTimer:proxyGetSpellInfo(9484), -- Shackle Undead
+			ClassTimer:proxyGetSpellInfo(20711), -- Spirit of Redemption
+			(ClassTimer:proxyGetSpellInfo(6788)), -- Weakened Soul
 		},
 	}
 end

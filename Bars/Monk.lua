@@ -5,37 +5,37 @@ end
 function ClassTimer:CreateTimers()
 	return {
 		Buffs = {
-			GetSpellInfo(122278), -- Dampen Harm
-			GetSpellInfo(115213), -- Avert Harm
-			GetSpellInfo(124280), -- Touch of Karma
-			GetSpellInfo(115308), -- Elusive Brew
-			GetSpellInfo(115203), -- Fortifying Brew
-			GetSpellInfo(124682), -- Enveloping Mist
-			GetSpellInfo(115151), -- Renewing Mist
-			GetSpellInfo(115175), -- Soothing Mist
-			GetSpellInfo(115307), -- Shuffle
-			GetSpellInfo(120274), -- Tiger Strikes
-			GetSpellInfo(118636), -- Power Guard
-			GetSpellInfo(121125), -- Death Note
-			GetSpellInfo(125359), -- Tiger Power
-			GetSpellInfo(115288), -- Energizing Brew
-			GetSpellInfo(115295), -- Guard
-			GetSpellInfo(116768), -- Combo Breaker: Blackout Kick
-			GetSpellInfo(118864), -- Combo Breaker: Tiger Palm
-			GetSpellInfo(101546), -- Spinning Crane Kick
-			GetSpellInfo(116740), -- Tigereye Brew
-			(GetSpellInfo(122783)), -- Diffuse Magic
+			ClassTimer:proxyGetSpellInfo(122278), -- Dampen Harm
+			ClassTimer:proxyGetSpellInfo(115213), -- Avert Harm
+			ClassTimer:proxyGetSpellInfo(124280), -- Touch of Karma
+			ClassTimer:proxyGetSpellInfo(115308), -- Elusive Brew
+			ClassTimer:proxyGetSpellInfo(115203), -- Fortifying Brew
+			ClassTimer:proxyGetSpellInfo(124682), -- Enveloping Mist
+			ClassTimer:proxyGetSpellInfo(115151), -- Renewing Mist
+			ClassTimer:proxyGetSpellInfo(115175), -- Soothing Mist
+			ClassTimer:proxyGetSpellInfo(115307), -- Shuffle
+			ClassTimer:proxyGetSpellInfo(120274), -- Tiger Strikes
+			ClassTimer:proxyGetSpellInfo(118636), -- Power Guard
+			ClassTimer:proxyGetSpellInfo(121125), -- Death Note
+			ClassTimer:proxyGetSpellInfo(125359), -- Tiger Power
+			ClassTimer:proxyGetSpellInfo(115288), -- Energizing Brew
+			ClassTimer:proxyGetSpellInfo(115295), -- Guard
+			ClassTimer:proxyGetSpellInfo(116768), -- Combo Breaker: Blackout Kick
+			ClassTimer:proxyGetSpellInfo(118864), -- Combo Breaker: Tiger Palm
+			ClassTimer:proxyGetSpellInfo(101546), -- Spinning Crane Kick
+			ClassTimer:proxyGetSpellInfo(116740), -- Tigereye Brew
+			(ClassTimer:proxyGetSpellInfo(122783)), -- Diffuse Magic
 		},
 		Debuffs = {
-			GetSpellInfo(115804), -- Mortal Wounds
-			GetSpellInfo(128531), -- Blackout Kick
-			GetSpellInfo(107428), -- Rising Sun Kick
-			(GetSpellInfo(115180)), -- Dizzying Haze
+			ClassTimer:proxyGetSpellInfo(115804), -- Mortal Wounds
+			ClassTimer:proxyGetSpellInfo(128531), -- Blackout Kick
+			ClassTimer:proxyGetSpellInfo(107428), -- Rising Sun Kick
+			(ClassTimer:proxyGetSpellInfo(115180)), -- Dizzying Haze
 		},
 		Misc = {
-			GetSpellInfo(116095), -- Disable
-			GetSpellInfo(119381), -- Leg Sweep
-			(GetSpellInfo(115078)), -- Paralysis
+			ClassTimer:proxyGetSpellInfo(116095), -- Disable
+			ClassTimer:proxyGetSpellInfo(119381), -- Leg Sweep
+			(ClassTimer:proxyGetSpellInfo(115078)), -- Paralysis
 		},
 	}
 end

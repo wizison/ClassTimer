@@ -5,45 +5,45 @@ end
 function ClassTimer:CreateTimers()
 	return {
 		Buffs = {
-			GetSpellInfo(6673), -- Battle Shout
-			GetSpellInfo(18499), -- Berserker Rage
-			GetSpellInfo(469), -- Commanding Shout
-			GetSpellInfo(1719), -- Recklessness
-			GetSpellInfo(118038), -- Die by the Sword
-			GetSpellInfo(1160), -- Demoralizing Shout
-			GetSpellInfo(29834), -- Second Wind
-			GetSpellInfo(2565), -- Shield Block
-			GetSpellInfo(12975), -- Last Stand
-			GetSpellInfo(12880), -- Enrage
-			GetSpellInfo(46951), -- Sword and Board
-			GetSpellInfo(56638), -- Taste for Blood
-			GetSpellInfo(46856), -- Trauma
-			GetSpellInfo(12329), -- Meat Cleaver
-			GetSpellInfo(107574), -- Avatar
-			GetSpellInfo(12292), -- Bloodbath
-			(GetSpellInfo(871)), -- Shield Wall
+			ClassTimer:proxyGetSpellInfo(6673), -- Battle Shout
+			ClassTimer:proxyGetSpellInfo(18499), -- Berserker Rage
+			ClassTimer:proxyGetSpellInfo(469), -- Commanding Shout
+			ClassTimer:proxyGetSpellInfo(1719), -- Recklessness
+			ClassTimer:proxyGetSpellInfo(118038), -- Die by the Sword
+			ClassTimer:proxyGetSpellInfo(1160), -- Demoralizing Shout
+			ClassTimer:proxyGetSpellInfo(29834), -- Second Wind
+			ClassTimer:proxyGetSpellInfo(2565), -- Shield Block
+			ClassTimer:proxyGetSpellInfo(12975), -- Last Stand
+			ClassTimer:proxyGetSpellInfo(12880), -- Enrage
+			ClassTimer:proxyGetSpellInfo(46951), -- Sword and Board
+			ClassTimer:proxyGetSpellInfo(56638), -- Taste for Blood
+			ClassTimer:proxyGetSpellInfo(46856), -- Trauma
+			ClassTimer:proxyGetSpellInfo(12329), -- Meat Cleaver
+			ClassTimer:proxyGetSpellInfo(107574), -- Avatar
+			ClassTimer:proxyGetSpellInfo(12292), -- Bloodbath
+			(ClassTimer:proxyGetSpellInfo(871)), -- Shield Wall
 		},
 		DOTs = {
-			GetSpellInfo(86346), -- Colossus Smash
-			GetSpellInfo(12721), -- Deep Wounds
-			GetSpellInfo(1160), -- Demoralizing Shout
-			GetSpellInfo(1715), -- Hamstring
-			GetSpellInfo(12294), -- Mortal Strike
-			GetSpellInfo(64382), -- Shattering Throw
-			GetSpellInfo(772), -- Rend
-			GetSpellInfo(6552), -- Pummel
-			(GetSpellInfo(115798)), -- Weakened Blows
+			ClassTimer:proxyGetSpellInfo(86346), -- Colossus Smash
+			ClassTimer:proxyGetSpellInfo(12721), -- Deep Wounds
+			ClassTimer:proxyGetSpellInfo(1160), -- Demoralizing Shout
+			ClassTimer:proxyGetSpellInfo(1715), -- Hamstring
+			ClassTimer:proxyGetSpellInfo(12294), -- Mortal Strike
+			ClassTimer:proxyGetSpellInfo(64382), -- Shattering Throw
+			ClassTimer:proxyGetSpellInfo(772), -- Rend
+			ClassTimer:proxyGetSpellInfo(6552), -- Pummel
+			(ClassTimer:proxyGetSpellInfo(115798)), -- Weakened Blows
 		},
 		Stuns = {
-			GetSpellInfo(103828), -- Warbringer
-			GetSpellInfo(46968), -- Shockwave
-			GetSpellInfo(118000), -- Dragon Roar
-			(GetSpellInfo(12323)), -- Piercing Howl
+			ClassTimer:proxyGetSpellInfo(103828), -- Warbringer
+			ClassTimer:proxyGetSpellInfo(46968), -- Shockwave
+			ClassTimer:proxyGetSpellInfo(118000), -- Dragon Roar
+			(ClassTimer:proxyGetSpellInfo(12323)), -- Piercing Howl
 		},
 		Misc = {
-			GetSpellInfo(46924), --Bladestorm
-			GetSpellInfo(5246), -- Intimidating Shout
-			(GetSpellInfo(6572)), -- Revenge
+			ClassTimer:proxyGetSpellInfo(46924), --Bladestorm
+			ClassTimer:proxyGetSpellInfo(5246), -- Intimidating Shout
+			(ClassTimer:proxyGetSpellInfo(6572)), -- Revenge
 		},
 	}
 end

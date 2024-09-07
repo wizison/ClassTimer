@@ -5,26 +5,26 @@ end
 function ClassTimer:CreateTimers()
 	return {
 		Misc = {
-			GetSpellInfo(51271), -- Unbreakable Armor
-			GetSpellInfo(48792), -- Icebound Fortitude
-			GetSpellInfo(55095), -- Frost Fever
-			GetSpellInfo(81131), -- Scarlet Fever
-			GetSpellInfo(49194), -- Unholy Blight
-			GetSpellInfo(22744), -- Chains of Ice
-			GetSpellInfo(55078), -- Blood Plague
-			GetSpellInfo(51726), -- Ebon Plague
-			GetSpellInfo(59052), -- Freezing Fog
-			GetSpellInfo(51123), -- Killing Machine
-			GetSpellInfo(49182), -- Blade Barrier
-			GetSpellInfo(55233), -- Vampiric Blood
-			GetSpellInfo(63560), -- Ghoul Frenzy (Pet)
-			GetSpellInfo(63560), -- Dark Transformation (Pet)
-			(GetSpellInfo(49222)), -- Bone Shield
+			ClassTimer:proxyGetSpellInfo(51271), -- Unbreakable Armor
+			ClassTimer:proxyGetSpellInfo(48792), -- Icebound Fortitude
+			ClassTimer:proxyGetSpellInfo(55095), -- Frost Fever
+			ClassTimer:proxyGetSpellInfo(81131), -- Scarlet Fever
+			ClassTimer:proxyGetSpellInfo(49194), -- Unholy Blight
+			ClassTimer:proxyGetSpellInfo(22744), -- Chains of Ice
+			ClassTimer:proxyGetSpellInfo(55078), -- Blood Plague
+			ClassTimer:proxyGetSpellInfo(51726), -- Ebon Plague
+			ClassTimer:proxyGetSpellInfo(59052), -- Freezing Fog
+			ClassTimer:proxyGetSpellInfo(51123), -- Killing Machine
+			ClassTimer:proxyGetSpellInfo(49182), -- Blade Barrier
+			ClassTimer:proxyGetSpellInfo(55233), -- Vampiric Blood
+			ClassTimer:proxyGetSpellInfo(63560), -- Ghoul Frenzy (Pet)
+			ClassTimer:proxyGetSpellInfo(63560), -- Dark Transformation (Pet)
+			(ClassTimer:proxyGetSpellInfo(49222)), -- Bone Shield
 		},
 		DOTs = {
-			GetSpellInfo(191587), -- Virulent Plague
-			GetSpellInfo(197147), -- Festering Wound
-			(GetSpellInfo(115798)), -- Weakened Blows
+			ClassTimer:proxyGetSpellInfo(191587), -- Virulent Plague
+			ClassTimer:proxyGetSpellInfo(197147), -- Festering Wound
+			(ClassTimer:proxyGetSpellInfo(115798)), -- Weakened Blows
 		},
 	}
 end

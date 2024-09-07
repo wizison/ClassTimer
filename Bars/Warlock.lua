@@ -5,40 +5,40 @@ end
 function ClassTimer:CreateTimers()
 	return {
 		Buffs = {
-			GetSpellInfo(1098), -- Enslave Demon
-			GetSpellInfo(1122), -- Summon Infernal
-			GetSpellInfo(17941), -- Nightfall
-			GetSpellInfo(140074), -- Molten Core
-			(GetSpellInfo(17794)), -- Shadow Vulnerability
+			ClassTimer:proxyGetSpellInfo(1098), -- Enslave Demon
+			ClassTimer:proxyGetSpellInfo(1122), -- Summon Infernal
+			ClassTimer:proxyGetSpellInfo(17941), -- Nightfall
+			ClassTimer:proxyGetSpellInfo(140074), -- Molten Core
+			(ClassTimer:proxyGetSpellInfo(17794)), -- Shadow Vulnerability
 		},
 		Curses = {
-			GetSpellInfo(980), -- Agony
-			(GetSpellInfo(603)), -- Doom
+			ClassTimer:proxyGetSpellInfo(980), -- Agony
+			(ClassTimer:proxyGetSpellInfo(603)), -- Doom
 		},
 		DOTs = {
-			GetSpellInfo(172), -- Corruption
-			GetSpellInfo(44518), -- Immolate
-			GetSpellInfo(61290), -- Shadowflame
-			GetSpellInfo(27243), -- Seed of Corruption
-			GetSpellInfo(48181), -- Haunt
-			GetSpellInfo(47960), -- Shadowflame
-			GetSpellInfo(17962), -- Conflagrate
-			GetSpellInfo(124480), -- Conflag, green
-			GetSpellInfo(124481), -- Conflag, green, ae
-			GetSpellInfo(689), -- Drain Life
-			GetSpellInfo(80240), -- Havoc
-			(GetSpellInfo(30108)), -- Unstable Affliction
+			ClassTimer:proxyGetSpellInfo(172), -- Corruption
+			ClassTimer:proxyGetSpellInfo(44518), -- Immolate
+			ClassTimer:proxyGetSpellInfo(61290), -- Shadowflame
+			ClassTimer:proxyGetSpellInfo(27243), -- Seed of Corruption
+			ClassTimer:proxyGetSpellInfo(48181), -- Haunt
+			ClassTimer:proxyGetSpellInfo(47960), -- Shadowflame
+			ClassTimer:proxyGetSpellInfo(17962), -- Conflagrate
+			ClassTimer:proxyGetSpellInfo(124480), -- Conflag, green
+			ClassTimer:proxyGetSpellInfo(124481), -- Conflag, green, ae
+			ClassTimer:proxyGetSpellInfo(689), -- Drain Life
+			ClassTimer:proxyGetSpellInfo(80240), -- Havoc
+			(ClassTimer:proxyGetSpellInfo(30108)), -- Unstable Affliction
 		},
 		Misc = {
-			GetSpellInfo(710), -- Banish
-			GetSpellInfo(48184), --Haunt
-			GetSpellInfo(6789), -- Mortal Coil
-			GetSpellInfo(5782), -- Fear
-			GetSpellInfo(5484), -- Howl of Terror
-			GetSpellInfo(29893), -- Ritual of Souls
-			GetSpellInfo(6358), -- Seduction
-			GetSpellInfo(17877), -- Shadowburn
-			(GetSpellInfo(20707)), -- Soulstone Resurrection
+			ClassTimer:proxyGetSpellInfo(710), -- Banish
+			ClassTimer:proxyGetSpellInfo(48184), --Haunt
+			ClassTimer:proxyGetSpellInfo(6789), -- Mortal Coil
+			ClassTimer:proxyGetSpellInfo(5782), -- Fear
+			ClassTimer:proxyGetSpellInfo(5484), -- Howl of Terror
+			ClassTimer:proxyGetSpellInfo(29893), -- Ritual of Souls
+			ClassTimer:proxyGetSpellInfo(6358), -- Seduction
+			ClassTimer:proxyGetSpellInfo(17877), -- Shadowburn
+			(ClassTimer:proxyGetSpellInfo(20707)), -- Soulstone Resurrection
 		},
 	}
 end
