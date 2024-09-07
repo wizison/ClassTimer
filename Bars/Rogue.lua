@@ -42,6 +42,8 @@ function ClassTimer:CreateTimers()
 			ClassTimer:proxyGetSpellInfo(157584), -- Instant Poison
 			ClassTimer:proxyGetSpellInfo(135345), -- Internal Bleeding
 			ClassTimer:proxyGetSpellInfo(196937), -- Ghostly Strike
+			ClassTimer:proxyGetSpellInfo(5938), -- Shiv
+			ClassTimer:proxyGetSpellInfo(121411), -- Crimson Tempest
 			(ClassTimer:proxyGetSpellInfo(1943)), -- Rupture
 		},
 		Poisons = {
