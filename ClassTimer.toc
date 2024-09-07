@@ -1,7 +1,7 @@
 ## Interface: 30403
-## Title: ClassTimer by uR Wizi
+## Title: ClassTimer updated by wizi
 ## Notes: Timers for Buffs, DOTs, CC effects, etc..
-## Author: Wizi
+## Author: wizi
 ## SavedVariables: ClassTimerDB
 ## Version: 1.0.0
 ## OptionalDeps: Ace3, LibSharedMedia-3.0

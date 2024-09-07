@@ -25,7 +25,8 @@ function ClassTimer:CreateTimers()
 			ClassTimer:proxyGetSpellInfo(14914), -- Holy Fire
 			ClassTimer:proxyGetSpellInfo(64044), -- Psychic Horror
 			ClassTimer:proxyGetSpellInfo(204197), -- Purge the Wicked
-			(ClassTimer:proxyGetSpellInfo(34914)), -- Vampiric Touch
+			ClassTimer:proxyGetSpellInfo(34914), -- Vampiric Touch
+			(ClassTimer:proxyGetSpellInfo(335467)), -- Devouring Plague
 		},
 		Misc = {
 			ClassTimer:proxyGetSpellInfo(586), -- Fade

@@ -23,10 +23,11 @@ function ClassTimer:CreateTimers()
 			ClassTimer:proxyGetSpellInfo(48181), -- Haunt
 			ClassTimer:proxyGetSpellInfo(47960), -- Shadowflame
 			ClassTimer:proxyGetSpellInfo(17962), -- Conflagrate
-			ClassTimer:proxyGetSpellInfo(124480), -- Conflag, green
-			ClassTimer:proxyGetSpellInfo(124481), -- Conflag, green, ae
+			ClassTimer:proxyGetSpellInfo(124480), -- Conflagrate, green
+			ClassTimer:proxyGetSpellInfo(124481), -- Conflagrate, green, ae
 			ClassTimer:proxyGetSpellInfo(689), -- Drain Life
 			ClassTimer:proxyGetSpellInfo(80240), -- Havoc
+			ClassTimer:proxyGetSpellInfo(386997), -- Soul Rod
 			(ClassTimer:proxyGetSpellInfo(30108)), -- Unstable Affliction
 		},
 		Misc = {
