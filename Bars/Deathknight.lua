@@ -24,6 +24,7 @@ function ClassTimer:CreateTimers()
 		DOTs = {
 			ClassTimer:proxyGetSpellInfo(191587), -- Virulent Plague
 			ClassTimer:proxyGetSpellInfo(197147), -- Festering Wound
+			ClassTimer:proxyGetSpellInfo(343294), -- Soul Reaper
 			(ClassTimer:proxyGetSpellInfo(115798)), -- Weakened Blows
 		},
 	}
